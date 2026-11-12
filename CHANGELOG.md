@@ -29,3 +29,16 @@
   - Before: `20261111-final-details1`, `20261111-mobile23-note2`, `20261111-review08-transition-fix`, `20261112-desktop-wheel8`, `20261112-nav-shell2`, `20261112-project-typography17`, `20261112-stable-grip6`, `20261112-touch-nav18`, `20261112-unified-nav20`.
   - After: All nine versioned href/src references use `20261112-cleanup1`.
   - Reason: Use an identical cache key for each shared asset across pages.
+
+## Task 3 — Notebook canonical URLs
+
+- File: `notebooks/01_data_quality_analysis.html`
+  - Before: No canonical link.
+  - After: Added `https://mohadmuayad.github.io/notebooks/01_data_quality_analysis.html` next to the existing theme-color meta tag.
+  - Reason: Declare the published canonical URL without changing visible markup.
+- File: `notebooks/02_data_cleaning_validation.html`
+  - Before: No canonical link.
+  - After: Added `https://mohadmuayad.github.io/notebooks/02_data_cleaning_validation.html` next to the existing theme-color meta tag.
+  - Reason: Declare the published canonical URL without changing visible markup.
+
+Verified without edits: `index.html` and `factory.html` already have the requested canonical URLs. `404.html` and `factory/index.html` contain no versioned asset references.
